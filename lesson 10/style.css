@@ -1,0 +1,58 @@
+.slide{
+    width: 100%;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 20px;
+}
+
+.next{
+    right: 0;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(231, 226, 226, 0.8);
+}
+
+/* Fade animation for slides */
+
+.mySlides {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(0);
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.mySlides.active {
+    display: block;
+    opacity: 1;
+}
+
+.slide-in-right {
+    transform: translateX(100%);
+    opacity: 0;
+    animation: none;
+}
+
+.slide-in-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: none;
+}
+
+.mySlides.show-from-right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.mySlides.show-from-left {
+    transform: translateX(0);
+    opacity: 1;
+}
