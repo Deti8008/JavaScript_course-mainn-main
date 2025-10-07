@@ -17,7 +17,23 @@ $('#button').click(function() {
 
 
 
+$(".hidden").show(600);
 
+$(".square").animate({
+    height: '200px',
+    width: '200px',      
+})       
+
+// $(".testing").fadeOut(2000).fadeIn(2000).fadeOut(2000).fadeIn(2000);
+$(".testing").animate({
+    width : '+=100px',
+    fontSize : '20px',
+    // opacity : '0.5',
+}, 5000,
+function() {
+    // Animation complete.
+    alert("Animation complete");
+})
 
 
 
