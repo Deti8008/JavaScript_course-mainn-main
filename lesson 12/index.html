@@ -1,14 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQUERY UI, Sortable elements, accordions amd Tabs</title>
+
+    <style>
+        #sort {
+            list-style: none;
+            padding: 0;
+            width: 200px;
+        }
+
+        #sort li {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid black;
+            background-color: lightgray;
+            cursor: move;
+        }
+
+        #accordion {
+            width: 400px;
+            margin-top: 20px;
+        }
+
+        h3 {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    
-    <script src="jquery.js"></script>
-    <script src="jquery-ui.js"></script>
-    <script src="main.js"></script>
-</body> 
+    <ul id="sort">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ul>
+
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+            <p>
+                PARAGRAF 1
+                Lorem ipsum dolor sit amet consectetur adipisicing el Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Eos error, quo suscipit repudiandae non quaerat sit quae minus voluptates consequuntur
+                eveniet voluptatum cupiditate animi illo. Alias nesciunt optio odit similique. it. Quisquam, quod.
+            </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+            <p>
+                PARAGRAF 2
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.lo Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Totam quos velit nesciunt ratione est nihil explicabo? Neque, facilis!
+                Quae deserunt, nihil minus eaque rerum quisquam! Ut eos harum sapiente at?
+            </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+            <p>
+                PARAGRAF 3
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Vitae, necessitatibus? Quae voluptatum aliquam recusandae veniam.
+                Aspernatur, magnam beatae culpa earum libero rem et quae nam, pariatur neque voluptas, illum blanditiis.
+            </p>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Go to Tab 1</a></li>
+            <li><a href="#tabs-2">Go to Tab 2</a></li>
+            <li><a href="#tabs-3">Go to Tab 3</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p>
+                Content for Tab 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+            </p>
+        </div>
+        <div id="tabs-2">
+            <p>
+                Content for Tab 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+            </p>
+
+        </div>
+
+        <div id="tabs-3">
+            <p>
+                Content for Tab 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+            </p>
+        </div>
+
+
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script src="main.js"></script>
+</body>
+
 </html>
